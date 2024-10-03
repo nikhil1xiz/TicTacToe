@@ -18,7 +18,7 @@ function App() {
       [0, 4, 8],
       [2, 4, 6]
     ];
-    
+    if(!state.includes(null))alert(`No winners`)
     for (let i = 0; i < winPatterns.length; i++) {
       const [a, b, c] = winPatterns[i];
       if (state[a] && state[a] === state[b] && state[a] === state[c]) {
